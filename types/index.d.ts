@@ -8,3 +8,10 @@ import Vue from 'vue'
 export function install(vue: typeof Vue): void
 
 export type ValueType = string | number | string[] | number[]
+
+export interface IProps {
+	id?: string
+	label?: string
+	children?: string
+	expand?: string
+}

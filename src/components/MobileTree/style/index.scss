@@ -1,0 +1,44 @@
+.p-mobile-tree {
+	padding: 20px;
+
+	.p-mobile-tree-item {
+		display: flex;
+		justify-content: space-between;
+		font-size: 16px;
+		line-height: 26px;
+		cursor: pointer;
+
+		.el-icon-arrow-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 26px;
+			height: 26px;
+			transform: rotate(90deg);
+		}
+
+		&.fold {
+			.el-icon-arrow-right {
+				transform: rotate(0);
+			}
+		}
+
+		&.p-mobile-tree-item_check {
+			color: #108CFE;
+		}
+	}
+
+	.p-mobile-tree-children {
+		margin-top: 3px;
+		padding-left: 20px;
+		overflow: hidden;
+
+		&.fold {
+			height: 0px;
+
+			.el-icon-arrow-right {
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
